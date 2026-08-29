@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated manuscript and archived release."
+title: "Epistemic Action Shielding for Autonomous Agents Under Uncertainty"
+type: software
+authors:
+  - family-names: Abdelal
+    given-names: Gehad
+version: 0.1.0
+license: MIT
+abstract: >-
+  A research prototype implementing finite-model epistemic action shielding,
+  operational-governance filtering, trace replay, diagnostic ablations,
+  controlled scaling, sensitivity analysis, and policy integration.

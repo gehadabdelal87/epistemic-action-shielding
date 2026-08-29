@@ -1,0 +1,7 @@
+# Versions used for validation in the artifact-generation environment.
+# The core package itself has no third-party runtime dependency.
+
+matplotlib==3.10.8
+numpy==2.3.5
+pytest==9.0.2
+torch==2.10.0

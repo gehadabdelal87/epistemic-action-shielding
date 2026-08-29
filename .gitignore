@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+results/*
+!results/smoke/
+results/smoke/*
+!results/smoke/README.md
+.DS_Store

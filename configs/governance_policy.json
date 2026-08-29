@@ -1,0 +1,46 @@
+{
+  "version": "gate-governance-v1",
+  "constraints": [
+    {
+      "type": "source_reliability",
+      "threshold": 0.7,
+      "applies_to": ["autonomous_open", "coordinated_open"],
+      "constraint_id": "source_reliability",
+      "version": "1"
+    },
+    {
+      "type": "observation_quality",
+      "threshold": 0.7,
+      "applies_to": ["autonomous_open", "coordinated_open"],
+      "constraint_id": "observation_quality",
+      "version": "1"
+    },
+    {
+      "type": "known_provenance",
+      "applies_to": ["autonomous_open", "coordinated_open"],
+      "constraint_id": "known_provenance",
+      "version": "1"
+    },
+    {
+      "type": "max_action_risk",
+      "threshold": 10.0,
+      "applies_to": ["autonomous_open", "coordinated_open"],
+      "constraint_id": "max_action_risk",
+      "version": "1"
+    },
+    {
+      "type": "authorization",
+      "metadata_key": "authorized_actions",
+      "applies_to": [
+        "autonomous_open",
+        "coordinated_open",
+        "request_evidence",
+        "request_review",
+        "wait",
+        "safe_shutdown"
+      ],
+      "constraint_id": "actor_authorized",
+      "version": "1"
+    }
+  ]
+}

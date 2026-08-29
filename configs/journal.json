@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "primary": {
+    "seeds": [2026, 2027, 2028, 2029, 2030],
+    "scenarios_per_seed": 1000,
+    "extra_worlds": 6,
+    "extra_propositions": 2,
+    "extra_agents": 0
+  },
+  "scaling": {
+    "seed": 2026,
+    "repetitions": 100,
+    "warmup": 10
+  },
+  "sensitivity": {
+    "seed": 2026,
+    "scenarios": 1000
+  },
+  "update_revision": {
+    "seed": 2026,
+    "repetitions": 500
+  },
+  "policy": {
+    "training_seeds": [2026, 2027, 2028, 2029, 2030, 2031, 2032, 2033, 2034, 2035],
+    "evaluation_seed": 30260,
+    "training_episodes": 5000,
+    "evaluation_episodes": 100,
+    "confidence_threshold": 0.8,
+    "verification_probability": 0.6,
+    "safe_probability": 0.5,
+    "hidden_size": 64,
+    "batch_size": 64,
+    "min_replay_size": 256,
+    "epsilon_decay_steps": 5000
+  },
+  "statistics": {
+    "reference": "eas",
+    "bootstrap_resamples": 5000,
+    "seed": 2026
+  },
+  "figures": {
+    "format": "png"
+  }
+}
