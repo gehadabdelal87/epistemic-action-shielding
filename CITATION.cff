@@ -1,11 +1,15 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite the associated manuscript and archived release."
+message: "If you use this software, please cite this archived release and the associated manuscript when available."
 title: "Epistemic Action Shielding for Autonomous Agents Under Uncertainty"
 type: software
 authors:
   - family-names: Abdelal
     given-names: Gehad
+    orcid: "https://orcid.org/0000-0001-6175-2896"
 version: 0.1.1
+date-released: 2026-08-29
+doi: "10.5281/zenodo.22169778"
+repository-code: "https://github.com/gehadabdelal87/epistemic-action-shielding"
 license: MIT
 abstract: >-
   A research prototype implementing finite-model epistemic action shielding,

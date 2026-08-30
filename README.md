@@ -314,16 +314,20 @@ The main formalization uses factive S5 knowledge. It therefore cannot represent 
 
 ## Archival release
 
-Before journal submission:
+The canonical reproducible research artifact is release `v0.1.1`.
 
-1. create the public/version-controlled repository and commit the exact artifact to be evaluated;
-2. run `bash scripts/reproduce.sh configs/journal.json results/journal` from that checkout so the configuration snapshot, runtime environment, and output checksums are captured;
-3. verify that `results/journal/` contains `config_used.json`, `python_version.txt`, `environment_freeze.txt`, `environment.json`, `artifact_manifest.json`, and the `primary/`, `scaling/`, `sensitivity/`, `update_revision/`, `policy/`, `statistics/`, and `figures/` directories;
-4. regenerate manuscript tables and figures only from the archived machine-readable outputs;
-5. create a frozen public release and archive it with a DOI or other persistent identifier once one is actually minted; and
-6. include the real release identifier and Git commit in the manuscript’s code-availability statement.
+- Git commit: `a41eb39010caf1e3d016f63ce7d370155056b3cb`
+- GitHub repository: https://github.com/gehadabdelal87/epistemic-action-shielding
+- GitHub release: https://github.com/gehadabdelal87/epistemic-action-shielding/releases/tag/v0.1.1
+- Version DOI: `10.5281/zenodo.22169778`
+- DOI resolver: https://doi.org/10.5281/zenodo.22169778
+- Concept DOI for all versions: `10.5281/zenodo.22169777`
 
-Do not invent or manually backfill a DOI, repository URL, or Git revision before those identifiers exist, and do not hand-edit `artifact_manifest.json` after generation.
+The Zenodo record archives the version-controlled source release together with the full journal-scale experimental results, configuration and environment records, statistical outputs, figures, trained DQN checkpoints, provenance files, and SHA-256 checksum files.
+
+The archived `v0.1.1` source differs from `v0.1.0` only in release/version metadata; no scientific implementation, experiment configuration, or result-generating code changed.
+
+For exact reproducibility, manuscript claims and figures should be tied to the archived `v0.1.1` release and its version-specific DOI rather than to a moving branch.
 
 ## License
 
